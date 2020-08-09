@@ -52,7 +52,7 @@ The style guide for the HubSpot CMS boilerplate. Please use this style guide as 
     </section>
 
     <footer>
-      <a href="/blog-post-title">Read More</a> 
+      <a href="/blog-post-title">Read More</a>
     </footer>
   </article>
 <section>
@@ -72,7 +72,7 @@ The style guide for the HubSpot CMS boilerplate. Please use this style guide as 
     </div>
 
     <div class="post-footer">
-      <a href="/blog-post-title">Read More</a> 
+      <a href="/blog-post-title">Read More</a>
     </div>
   </div>
 </div>
