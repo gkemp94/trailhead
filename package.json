@@ -1,0 +1,22 @@
+{
+  "name": "@hubspot/cms-theme-boilerplate",
+  "version": "1.3.1",
+  "description": "Boilerplate project for building websites on the HubSpot CMS",
+  "repository": {
+    "type": "git",
+    "url": "git@git.hubteam.com:HubSpot/cms-theme-boilerplate.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@hubspot/cms-cli": "^1.0.13",
+    "eslint": "^6.3.0",
+    "js-yaml": "^3.13.1",
+    "prettier": "^1.18.2"
+  },
+  "scripts": {
+    "eslint": "eslint src",
+    "lint": "eslint src && prettier --list-different 'src/**/*.js' 'src/**/*.json'",
+    "prettier:write": "prettier --write 'src/**/*.js' 'src/**/*.json'"
+  }
+}
