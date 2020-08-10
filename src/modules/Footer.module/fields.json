@@ -1,0 +1,137 @@
+[ {
+  "id" : "413420a5-532f-9281-9763-4ac4c876f24f",
+  "name" : "section",
+  "label" : "Section",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 4,
+    "sorting_label_field" : "56e7c069-1a68-8bdd-25eb-9de78f0b8f4f",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "56e7c069-1a68-8bdd-25eb-9de78f0b8f4f",
+    "name" : "header",
+    "label" : "Header",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "About Us"
+  }, {
+    "id" : "2ec640f6-206c-f6c5-427f-688957ead117",
+    "name" : "type",
+    "label" : "Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "text", "Text Field" ], [ "links", "Links" ], [ "form", "Form" ] ],
+    "type" : "choice",
+    "default" : "text"
+  }, {
+    "id" : "d7fe8dbc-57e9-9e67-c125-b4dbd7795d3e",
+    "name" : "text",
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "2ec640f6-206c-f6c5-427f-688957ead117",
+      "controlling_value_regex" : "text",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "richtext",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laboriosam soluta a recusandae repellat aliquid iusto cumque atque voluptatem distinctio."
+  }, {
+    "id" : "d79e142d-59a4-2e87-f449-bbbfccd95378",
+    "name" : "links",
+    "label" : "Links",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "2ec640f6-206c-f6c5-427f-688957ead117",
+      "controlling_value_regex" : "links",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "simplemenu",
+    "default" : [ ]
+  }, {
+    "id" : "c7ad4d1f-27c0-34f6-f4e0-d8fd360ea5e8",
+    "name" : "form",
+    "label" : "Form",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "2ec640f6-206c-f6c5-427f-688957ead117",
+      "controlling_value_regex" : "form",
+      "operator" : "EQUAL",
+      "access" : null,
+      "hidden_subfields" : null
+    },
+    "type" : "form",
+    "default" : {
+      "form_id" : "5a72fe79-46f5-46bc-adab-b454d39baa4e",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "type" : "group",
+  "default" : [ {
+    "header" : "About Us",
+    "type" : "text",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laboriosam soluta a recusandae repellat aliquid iusto cumque atque voluptatem distinctio.",
+    "links" : [ ],
+    "form" : {
+      "form_id" : "5a72fe79-46f5-46bc-adab-b454d39baa4e",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }, {
+    "header" : "About Us",
+    "type" : "text",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laboriosam soluta a recusandae repellat aliquid iusto cumque atque voluptatem distinctio.",
+    "links" : [ ],
+    "form" : {
+      "form_id" : "5a72fe79-46f5-46bc-adab-b454d39baa4e",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }, {
+    "header" : "About Us",
+    "type" : "text",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laboriosam soluta a recusandae repellat aliquid iusto cumque atque voluptatem distinctio.",
+    "links" : [ ],
+    "form" : {
+      "form_id" : "5a72fe79-46f5-46bc-adab-b454d39baa4e",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }, {
+    "header" : "About Us",
+    "type" : "text",
+    "text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laboriosam soluta a recusandae repellat aliquid iusto cumque atque voluptatem distinctio.",
+    "links" : [ ],
+    "form" : {
+      "form_id" : "5a72fe79-46f5-46bc-adab-b454d39baa4e",
+      "response_type" : "inline",
+      "message" : "Thanks for submitting the form.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  } ]
+} ]

@@ -1,0 +1,10 @@
+[ {
+  "id" : "4f0bbee0-3d20-42ba-0291-d1514dd3874c",
+  "name" : "enabled",
+  "label" : "Enabled",
+  "required" : false,
+  "locked" : true,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

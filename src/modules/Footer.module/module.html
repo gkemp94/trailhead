@@ -1,0 +1,36 @@
+<svg style="display:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#102542" fill-opacity="1" d="M0,160L60,165.3C120,171,240,181,360,208C480,235,600,277,720,282.7C840,288,960,256,1080,240C1200,224,1320,224,1380,224L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+</svg>
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="row">
+      {% for item in module.section %}
+        <section class="footer__section">
+          <h3>{% inline_text field="header" no_wrapper="true" value="{{ item.header }}" %}</h3>
+          {% if item.type == "text" %}
+            {% inline_rich_text field="text" no_wrapper="true"  value="{{ item.text }}" %}
+          {% elif item.type == "links" %}
+            {% simple_menu menu_tree="{{ item.links }}" %}
+          {% elif item.type == "form" %}
+            {% form
+              form_to_use="{{ item.form.form_id }}"
+              response_response_type="{{ item.form.response_type }}"
+              response_message="{{ item.form.message }}"
+              response_redirect_id="{{ item.form.redirect_id }}"
+              response_redirect_url="{{item.form.redirect_url}}"
+              gotowebinar_webinar_key="{{ item.form.gotowebinar_webinar_key }}"
+            %}
+          {% endif %}
+        </section>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <section class="footer__section">
+        <div id="footer-metrics">
+
+        </div>
+      </section>
+    </div>
+  </div>
+</footer>
+

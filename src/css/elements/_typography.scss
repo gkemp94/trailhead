@@ -1,10 +1,10 @@
 html {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -16,8 +16,8 @@ html {
 
 body {
   color: #494A52;
-  font-family: Lato, sans-serif;
-  line-height: 1.4;
+  font-family: $font-family-primary;
+  line-height: 1.9em;
   word-break: break-word;
 }
 
@@ -42,13 +42,13 @@ strong {
 /* Anchors */
 
 a {
-  color: #0270E0;
+  color: currentColor;
   cursor: pointer;
   text-decoration: none;
 }
 
 a:hover, a:focus {
-  text-decoration: underline;
+  color: $color-primary;
 }
 
 /* Headings */
@@ -59,10 +59,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: #494A52;
-  font-family: Merriweather, serif;
+  font-family: $font-family-secondary;
   font-weight: 700;
   margin: 0 0 1.4rem;
+  line-height: 1.2em;
 }
 
 h1 {
@@ -78,7 +78,7 @@ h3 {
 }
 
 h4 {
-  font-family: Lato, sans-serif;
+  font-family: $font-family-primary;
   font-size: 1.175rem;
   font-weight: normal;
 }
@@ -89,24 +89,6 @@ h5 {
 
 h6 {
   font-size: 0.9rem;
-}
-
-/* Lists */
-
-ul,
-ol {
-  margin: 0 0 1.5rem;
-}
-
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin: 0;
-}
-
-ul.no-list {
-  list-style: none;
 }
 
 /* Code blocks */
@@ -126,10 +108,16 @@ blockquote {
 /* Horizontal rules */
 
 hr {
-  background-color: #CCC;
+  background-color: $color-primary;
   border: none;
-  color: #CCC;
-  height: 1px;
+}
+
+.hr {
+  &--variant-a {
+    width: 50%;
+    margin-left: 0px;
+    height: 2px;
+  }
 }
 
 /* Subscripts and superscripts */
@@ -159,4 +147,8 @@ sub {
 
 .disable-focus-styles :focus {
   outline: none;
+}
+
+.muted {
+  font-size: .9em;
 }

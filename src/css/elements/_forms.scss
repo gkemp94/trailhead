@@ -1,7 +1,7 @@
 /* Form */
 
 form {
-  font-family: Lato, sans-serif;
+  font-family: $font-family-primary;
 }
 
 .hs-form-field {
@@ -11,7 +11,7 @@ form {
 /* Labels */
 
 form label {
-  color: #33475B;
+  color: currentColor;
   display: block;
   font-size: 0.875rem;
   padding-top: 0;
@@ -205,10 +205,8 @@ form .header {
 
 form input[type=submit],
 form .hs-button {
-  background-color: #494A52;
-  border: 1px solid #494A52;
-  border-radius: 6px;
-  color: #FFF;
+  @extend .button;
+  // color: #FFF;
   cursor: pointer;
   display: inline-block;
   font-size: 0.92rem;
@@ -224,22 +222,6 @@ form .hs-button {
   white-space: normal;
   width: auto;
   word-break: break-word;
-}
-
-form input[type=submit]:hover,
-form input[type=submit]:focus,
-form .hs-button:hover,
-form .hs-button:focus {
-  background-color: #21222A;
-  border-color: #21222A;
-  color: #FFF;
-}
-
-form input[type=submit]:active,
-form .hs-button:active {
-  background-color: #71727A;
-  border-color: #71727A;
-  color: #FFF;
 }
 
 /* Captcha */

@@ -1,0 +1,35 @@
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+
+// ========================= //
+// ======== Colors ========= //
+// ========================= //
+$color-oxford-blue: #102542;
+$color-bittersweet: #F87060;
+$color-honey-yellow: #F6AE2D;
+$color-light-grey: #CDD7D6;
+$color-white: #FFF;
+
+$color-primary: $color-bittersweet;
+
+$color-dark: $color-oxford-blue;
+
+// ========================= //
+// ========= Fonts ========= //
+// ========================= //
+$font-family-primary: 'Karla', sans-serif;
+$font-family-secondary: 'Lora', serif;
+
+// ========================= //
+// ======== Footer ========= //
+// ========================= //
+$footer-background-color: $color-oxford-blue;
+$footer-color: $color-white;
+$footer-muted-color: $color-light-grey;
+
+

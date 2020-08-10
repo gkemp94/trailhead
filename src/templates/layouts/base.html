@@ -24,8 +24,8 @@
       {% endblock body %}
 
       {% block footer %}
-        {% global_partial path='../partials/footer.html' %}
-      {% endblock footer %}
+        {% module "Footer" path="../../modules/Footer", label="Footer" %}
+      {% endblock footer %} 
     </div>
     {{ standard_footer_includes }}
   </body>

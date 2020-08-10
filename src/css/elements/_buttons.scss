@@ -1,8 +1,8 @@
 button,
 .button {
-  background-color: #494A52;
-  border: 1px solid #494A52;
-  border-radius: 6px;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  border-radius: 25px;
   color: #FFF;
   cursor: pointer;
   display: inline-block;
@@ -32,16 +32,16 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  background-color: #21222A;
-  border-color: #21222A;
+  background-color: darken($color: $color-primary, $amount: 5);
+  border-color: darken($color: $color-primary, $amount: 5);
   color: #FFF;
   text-decoration: none;
 }
 
 button:active,
 .button:active {
-  background-color: #71727A;
-  border-color: #71727A;
+  background-color: darken($color: $color-primary, $amount: 10);
+  border-color: darken($color: $color-primary, $amount: 10);
   color: #FFF;
   text-decoration: none;
 }
